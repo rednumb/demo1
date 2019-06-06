@@ -1,0 +1,68 @@
+<!--pages/index/index.wxml-->
+<view class='container'>
+  <view class="header">
+    <view class='city' bindtap='cityChoose'>
+      <text>惠州市</text>
+      <van-icon name="arrow-down"></van-icon>
+    </view>
+    <input class='search' placeholder='请输入供需信息进行搜索'></input>
+    <icon type='search' size='16' class='icon-search'></icon>
+  </view>
+  <swiper class="banner">
+    <swiper-item>
+      <image src="../../images/banner01.jpg" class="slide-image" mode="scaleToFill" />
+    </swiper-item>
+    <swiper-item>
+      <image src="../../images/banner02.jpg" class="slide-image" />
+    </swiper-item>
+  </swiper>
+  <van-notice-bar text="通知内容" left-icon="volume-o" class="notice"/>
+  <view class="navs">
+  	<view class="nav-item">
+  	  <van-icon name="description" class="des" size="60rpx" color="white"/>
+      <text class="intro">协会简介</text>
+  	</view>
+  	<view class="nav-item">
+  	  <van-icon name="description" class="des" size="60rpx" color="white"/>
+      <text class="intro">协会简介</text>    
+  	</view>
+  	<view class="nav-item">
+  	  <van-icon name="idcard" class="des" size="60rpx" color="white"/>
+      <text class="intro">协会简介</text>    
+  	</view>
+  	<view class="nav-item">
+  	  <van-icon name="idcard" class="des" size="60rpx" color="white"/>
+      <text class="intro">协会简介</text>    
+  	</view>
+  	<view class="nav-item">
+  	  <van-icon name="idcard" class="des" size="60rpx" color="white"/>
+      <text class="intro">协会简介</text>    
+  	</view>
+  </view>
+  <view class="rent">
+    <view class="rent-item"></view>
+    <view class="rent-item"></view>
+    <view class="rent-item"></view>
+    <view class="rent-item"></view> 
+  </view>
+  <view class="members-wrap">
+	<view class="members">
+	  <van-icon name="gem-o" color="#DE8357"></van-icon>
+	  <text class="members-title">会员商城</text>
+	  <text class="more">更多</text>
+	  <van-icon name="arrow" color="#999" class="icon-arrow"></van-icon>
+    </view>
+    <view class="members-list">
+      <view class="member"></view>
+      <view class="member"></view>
+      <view class="member"></view>
+      <view class="member"></view> 
+    </view>
+  </view>
+  <van-tabs active="{{ active }}" bind:change="onChange" class="tab">
+    <van-tab title="标签 1">内容 1</van-tab>
+    <van-tab title="标签 2">内容 2</van-tab>
+    <van-tab title="标签 3">内容 3</van-tab>
+    <van-tab title="标签 4">内容 4</van-tab>
+  </van-tabs>
+</view>
